@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\course;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/courseMaterial/{year}/{term}', function ($year,$term) {
-    return view('courseMaterial');
+    $courses = course::where([['year', $year],['term', $term]])->orderBy('id')->take(10)->get();
+    return view('courseMaterial',['courses'=>$courses]);
 });

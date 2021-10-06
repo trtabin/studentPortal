@@ -2,16 +2,20 @@
 
 @section('main')
 <div style="margin:20px"> 
-    <!-- ################################################################################################ -->
     
-      <h1 style="color:black; font-size:2vw; font-weight:bold;">EEE 1101: Introductory Circuit Analysis</h1>
-      <h2>EEE 1101: Introductory Circuit Analysis</h2>
-      <h2>EEE 1101: Introductory Circuit Analysis</h2>
+    @foreach($courses as $course)
+        <h1 style="color:black; font-weight:bold; text-decoration: underline;">
+            {{$course->courseCode}}: {{$course->courseTitle}} 
+        </h1>
 
-      <h1 style="color:black; font-size:2vw; font-weight:bold;">EEE 1101: Introductory Circuit Analysis</h1>
-      <h2>EEE 1101: Introductory Circuit Analysis</h2>
-      <h2>EEE 1101: Introductory Circuit Analysis</h2>
+        @php
+            $materials = App\Models\courseMaterial::where('courseCode',$course->courseCode)->get();
+        @endphp 
+
+        @foreach($materials as $material)
+        <h1><a style="color: gray;" href="{{$material->link}}">{{$material->name}}</a></h1>
+        @endforeach
+    @endforeach
     
-    <!-- ################################################################################################ -->
 </div>
 @endsection
