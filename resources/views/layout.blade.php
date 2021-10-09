@@ -13,7 +13,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <title>EEE</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="{{ asset('layout/styles/layout.css') }}" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
  
@@ -21,7 +21,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded" style="background-image:url('/images/background.jpg');"> 
+<div class="bgded" style="background-image:url({{ asset('/images/background.jpg') }});"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1">
     <header id="header" class="hoc clear">
@@ -38,7 +38,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <li><a href="/questionBank">Question Bank</a></li>
           <li><a class="drop" >Course Material</a>
             <ul>
-              <li><a href="/courseMaterial/1/1">Year 1 Term 1</a></li>
+              <li><a href="{{ asset('/courseMaterial/1/1') }}">Year 1 Term 1</a></li>
               <li><a href="/courseMaterial/1/2">Year 1 Term 2</a></li>
               <li><a href="/courseMaterial/2/1">Year 2 Term 1</a></li>
               <li><a href="/courseMaterial/2/2">Year 2 Term 2</a></li>

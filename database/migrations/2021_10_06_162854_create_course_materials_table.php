@@ -18,6 +18,7 @@ class CreateCourseMaterialsTable extends Migration
             $table->string('courseCode');
             $table->string('name');
             $table->string('link');
+            $table->timestamps();
         });
     }
 

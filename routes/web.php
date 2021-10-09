@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Models\course;
+use App\Models\courseMaterial;
+use Illuminate\Http\request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +18,45 @@ use App\Models\course;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('secondOption.welcome');
 });
 
 Route::get('/courseMaterial/{year}/{term}', function ($year,$term) {
     $courses = course::where([['year', $year],['term', $term]])->orderBy('id')->take(10)->get();
-    return view('courseMaterial',['courses'=>$courses]);
+    return view('secondOption.courseMaterial',['courses'=>$courses]);
+});
+
+Route::get('/researchTopic', function () {
+    return view('secondOption.research');
+});
+
+Route::get('/questionBank', function () {
+    return view('secondOption.question');
+});
+
+Route::get('/course', function () {
+    return view('secondOption.course');
+});
+
+Route::get('/shareDocument', function () {
+    $courses = course::all();
+    return view('secondOption.shareDocument',['courses'=>$courses]);
+});
+
+Route::post('/shareDocument', function () {
+
+    $data = request('courseCode');
+    $data = json_decode($data);
+    $couseCode = $data->courseCode;
+    // dump($data);
+
+    $material = new courseMaterial();   
+    $material->name = request('fileName');
+    $material->link = request('link');
+    $material->courseCode = $couseCode;
+    $material->save();
+
+    // return redirect('/');
+    return redirect('/courseMaterial/'.$data->year.'/'.$data->term);
+
 });
