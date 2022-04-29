@@ -1,0 +1,103 @@
+INSERT INTO `courses`( `courseCode`, `courseTitle`, `year`, `term`) VALUES 
+('EEE 1101','ELECTRICAL CIRCUIT-I','1','1'),
+('EEE 1102','ELECTRICAL CIRCUIT-I LAB','1','1'),
+('CSE 1101','STRUCTURE PROGRAMMING LANGUAGE','1','1'),
+('CSE 1102','STRUCTURE PROGRAMMING LANGUAGE LAB','1','1'),
+('PHY 1101','ELECTROMAGNETISM, WAVES, OSCILLATIONS AND OPTICS','1','1'),
+('PHY 1102','PHYSICS LAB','1','1'),
+('EEE 1104','ENGINEERING DRAWING','1','1'),
+('MATH 1101','DIFFERENTIAL, INTEGRAL CALCULUS AND CO-ORDINATE GEOMETRY','1','1'),
+('ENG 1101','TECHNICAL ENGLISH LAB','1','1'),
+('BLWS 1101','HISTORY OF THE EMERGENCE OF INDEPENDENT BANGLADESH','1','1'),
+
+
+
+('CSE 1201','Object Oriented Programming','1','2'),
+('CSE 1202','Object Oriented Programming Lab','1','2'),
+('EEE 1201','Electrical Circuits-II','1','2'),
+('EEE 1202','Electrical Circuits-II Lab','1','2'),
+('PHY 1203','Modern and Nuclear Physics, Quantum Mechanics and Thermodynamics','1','2'),
+('CHE 1201','General Chemistry','1','2'),
+('CHE 1202','General Chemistry Lab','1','2'),
+('MATH 1203','Matrices, Ordinary and Partial Differential Equations','1','2'),
+('BBA 1201','Financial and Cost Accounting','1','2'),
+
+
+
+('EEE 2101','Electronics-I','2','1'),
+('EEE 2102','Electronics-I Lab','2','1'),
+('EEE 2103','Basic Mechanical Engineering','2','1'),
+('EEE 2104','Basic Mechanical Engineering Lab','2','1'),
+('EEE 2105','Electrical Machines-I','2','1'),
+('EEE 2106','Electrical Machines-I Lab','2','1'),
+('EEE 2107','Linear Circuit Theory','2','1'),
+('MATH 2105','Vector Analysis and Complex Variables','2','1'),
+('ECO 2105','Principles of Economics','2','1'),
+
+
+('EEE 2201','Electronics-II','2','2'),
+('EEE 2202','Electronics-II Lab','2','2'),
+('EEE 2203','Electrical Machines-II','2','2'),
+('EEE 2204','Electrical Machines-II Lab','2','2'),
+('EEE 2206','Electrical and Electronic Shop Practice','2','2'),
+('EEE 2207','Signals and Systems','2','2'),
+('EEE 2208','Electrical and Electronic Circuit Simulation Lab','2','2'),
+('MATH 2207','Statistics and Probability','2','2'),
+('EEE 2209','Numerical Methods for Engineering','2','2'),
+('EEE 2210','Numerical Methods for Engineering Lab','2','2'),
+
+('EEE 3101','Digital Electronics and Logic Design','3','1'),
+('EEE 3102','Digital Electronics and Logic Design Lab','3','1'),
+('EEE 3103','Electrical Properties of Materials','3','1'),
+('EEE 3105','Power System Analysis-I','3','1'),
+('EEE 3106','Power System Analysis-I Lab','3','1'),
+('EEE 3107','Digital Signal Processing','3','1'),
+('EEE 3108','Digital Signal Processing Lab','3','1'),
+('EEE 3109','Basic Communication Engineering','3','1'),
+('EEE 3110','Basic Communication Engineering Lab','3','1'),
+('BBA 3103','Industrial and Business Management','3','1'),
+
+
+('EEE 3201','Power System Analysis-II','3','2'),
+('EEE 3203','Microprocessor, Interfacing and System Design','3','2'),
+('EEE 3204','Microprocessor, Interfacing and System Design Lab','3','2'),
+('EEE 3205','Control System Engineering','3','2'),
+('EEE 3206','Control System Engineering Lab','3','2'),
+('EEE 3207','Microwave, Radar and Satellite Communication','3','2'),
+('EEE 3208','Microwave, Radar and Satellite Communication Lab','3','2'),
+('EEE 3209','Electrical Measurement and Instrumentation','3','2'),
+('EEE 3210','Industrial Training','3','2'),
+('EEE 3212','Viva Voce','3','2'),
+
+
+('EEE 4102','Thesis/Project','4','1'),
+('EEE 4103','Power Electronics and Industrial Drives','4','1'),
+('EEE 4104','Power Electronics and Industrial Drives Lab','4','1'),
+('EEE 4105','Switchgear and Protection','4','1'),
+('EEE 4106','Switchgear and Protection Lab','4','1'),
+('EEE 4107','Microcontroller and PLC Based System','4','1'),
+('EEE 4108','Microcontroller and PLC Based System Lab','4','1'),
+('EEE 4109','Wireless and Mobile Communication','4','1'),
+('EEE 4110','Wireless and Mobile Communication Lab','4','1'),
+
+
+
+('EEE 4201','Research Methodology','4','2'),
+('EEE 4202','Thesis/Projects','4','2'),
+('EEE 4203','Power Plant Engineering','4','2'),
+('EEE 4205','Biomedical Instrumentation and Signal Processing','4','2'),
+('EEE 4206','Biomedical Instrumentation and Signal Processing Lab','4','2'),
+('EEE 4207','Renewable Energy Systems','4','2'),
+('EEE 4209','Artificial Intelligence','4','2'),
+('EEE 4210','Artificial Intelligence Lab','4','2'),
+('EEE 4212','Viva Voces','4','2');
+
+
+
+
+
+
+
+
+
+

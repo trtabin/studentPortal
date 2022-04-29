@@ -1,0 +1,3 @@
+database: tahmidurrahman_nstueeearchive
+password: kqBcvnPeiMq_r5h
+user name: tahmidurrahman_tabin
