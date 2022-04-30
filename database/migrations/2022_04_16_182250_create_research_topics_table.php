@@ -16,7 +16,7 @@ class CreateResearchTopicsTable extends Migration
         Schema::create('research_topics', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('abstract');
+            $table->string('abstract', 1500);
             $table->string('supervisor');
             $table->timestamps();
         });
